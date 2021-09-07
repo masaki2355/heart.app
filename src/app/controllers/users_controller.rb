@@ -1,8 +1,5 @@
 class UsersController < ApplicationController
-<<<<<<< HEAD
-  def index
-  end
-=======
+
 
   def index
     @users = User.all
@@ -27,5 +24,8 @@ class UsersController < ApplicationController
   def destroy
   end
 
+<<<<<<< HEAD
+>>>>>>> 2051b08 (ページ追加)
+=======
 >>>>>>> 2051b08 (ページ追加)
 end
