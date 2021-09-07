@@ -23,11 +23,5 @@ class UsersController < ApplicationController
   def destroy
   end
 
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 2051b08 (ページ追加)
-=======
->>>>>>> 2051b08 (ページ追加)
-=======
->>>>>>> 2051b08 (ページ追加)
+
 end
