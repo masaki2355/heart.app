@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
 
-
   def index
     @users = User.all
   end
@@ -25,6 +24,9 @@ class UsersController < ApplicationController
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2051b08 (ページ追加)
+=======
 >>>>>>> 2051b08 (ページ追加)
 =======
 >>>>>>> 2051b08 (ページ追加)
