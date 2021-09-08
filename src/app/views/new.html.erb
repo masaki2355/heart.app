@@ -3,29 +3,29 @@
 <% form_for @user do |f| %>
 
   <table>
-    <th><%=f.  %></th>
-    <td><%=f.  %></td>
+    <th><%=f.label :schoolname ,"学校名"  %></th>
+    <td><%=f.teXt_filed :schoolname  %></td>
   </table>
 
   <table>
-    <th><%=f.  %></th>
-    <td><%=f.  %></td>
+    <th><%=f.f.label :email , "メールアドレス"  %></th>
+    <td><%=f.text_filed :email  %></td>
   </table>
 
   <table>
-    <th><%=f.  %></th>
-    <td><%=f.  %></td>
+    <th><%=f.label :diary "メンバー"  %></th>
+    <td><%=f.text_filed :diary  %></td>
   </table>
 
   <table>
-    <th><%=f.  %></th>
-    <td><%=f.  %></td>
+    <th><%=f.label :password "パスワード" %></th>
+    <td><%=f.text_filed :password  %></td>
   </table>
 
   <div>
     <ul>
-      <li></li>
-      <li></li>
+      <li>f.submit"登録完了する"</li>
+      <li>link_to"ユーザー情報一覧に戻る",:users</li>
     </ul>
   </div>
 <% end %>
