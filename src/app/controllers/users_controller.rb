@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
   def index
-    @users = User.all
+    @users = User.all#allメゾットはusersテーブルのレコードを全て取得できるメゾッド
   end
 
   def new

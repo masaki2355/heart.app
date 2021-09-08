@@ -1,0 +1,31 @@
+<h3>アカウント新規登録</h3>
+
+<%= form_for@user do |f| %>
+
+  <table>
+    <th><%=f.label :schoolname ,"学校名"  %></th>
+    <td><%=f.text_field :schoolname  %></td>
+  </table>
+
+  <table>
+    <th><%=f.label :email , "メールアドレス"  %></th>
+    <td><%=f.text_field :email  %></td>
+  </table>
+
+  <table>
+    <th><%=f.label :diary, "メンバー"  %></th>
+    <td><%=f.text_area :diary  %></td>
+  </table>
+
+  <table>
+    <th><%=f.label :password, "パスワード" %></th>
+    <td><%=f.password_field :password  %></td>
+  </table>
+
+  <div>
+    <ul>
+      <li><%=f.submit"登録完了する" %></li>
+      <li><%=link_to"ユーザー情報一覧に戻る",:users %></li>
+    </ul>
+  </div>
+<% end %>
