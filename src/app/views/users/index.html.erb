@@ -1,6 +1,10 @@
 
 <h3>ユーザー情報一覧</h3>
 
+<% if flash.notice %>
+  <p class = "notice"><%= flash.notice %></p>
+<% end %>
+
 <table>
   <thead>
     <tr>
