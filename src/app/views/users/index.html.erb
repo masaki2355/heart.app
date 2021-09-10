@@ -11,8 +11,7 @@
       <th>id</th>
       <th>名前</th>
       <th>メールアドレス</th>
-      <th>年齢</th>
-      <th>一言紹介</th>
+      <th>メンバー</th>
       <th>更新日</th>
       <th>作成日</th>
     </tr>
@@ -25,8 +24,8 @@
         <td><%= user.schoolname %></td>
         <td><%= user.email %></td>
         <td><%= user.diary %></td>
-        <td><%= user.updated_at %></td>
-        <td><%= user.created_at %></td>  
+        <td><%= user.updated_at.to_s(:datetime_jp) %></td>
+        <td><%= user.created_at.to_s(:datetime_jp)%></td>  
       </tr>
     <% end %>
    </tbody>
