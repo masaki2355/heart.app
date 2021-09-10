@@ -9,6 +9,13 @@ class UsersController < ApplicationController
   end
 
   def create
+    @user = User.new(params.require(:user).permit(:schoolname, :email, :diary , :password))
+      if @user.save
+        flash[:notice] = "アカウントを新規登録しました"
+        redirect_to :users
+      else
+        render"new"
+      end
   end
 
   def show
