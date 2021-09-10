@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_02_065026) do
+ActiveRecord::Schema.define(version: 2021_09_10_163759) do
 
   create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "schoolname"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2021_09_02_065026) do
     t.string "diary"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "student"
   end
 
 end
