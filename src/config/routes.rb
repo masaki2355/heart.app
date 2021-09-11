@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'posts/index'
   get 'users/index'
   get 'heart/home'
   get 'heart/call'
