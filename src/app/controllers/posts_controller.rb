@@ -3,6 +3,9 @@ class PostsController < ApplicationController
   def index
     @users = User.all
     @posts = Post.all#postsテーブルの全データを取得する
+    
+    @post = Post.new
+    
   end
   
   def new
@@ -19,8 +22,7 @@ class PostsController < ApplicationController
   end
   
   def show
-    @user = User.find(params[:id])
-    @post = Post.new
+    
   end
   
   def edit

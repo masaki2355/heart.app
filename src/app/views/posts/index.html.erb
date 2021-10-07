@@ -24,4 +24,31 @@
   <% end %>
 </tbody>
 
+
+<h3>新規投稿</h3>
+
+<%= form_for@post do |f| %>
+
+  <table>
+    <tr>
+      <th><%= f.label :content,"投稿内容" %></th>
+      <td><%= f.text_area :content, class:"posts-content" %></td>
+    </tr>
+  </table>
+
+  
+
+  <div>
+    <ul>
+      <li><%= f.submit"投稿を完了する" %></li>
+    </ul>
+  </div>
+<% end %>
+
+<div>
+  <ul>
+    <li><%= link_to"ユーザー情報一覧に戻る", :users %></li>
+  </ul>
+</div>
+
 <p><%= link_to"ユーザー情報一覧", :users %></p>
